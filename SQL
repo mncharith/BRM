@@ -1,0 +1,9 @@
+--Account Details
+
+SELECT aa.poid_id0, aa.account_no, aa.cust_seg_list,aa.status,
+
+aa.lineage, aa.group_obj_id0, aa.currency, aa.locale
+
+FROM account_t aa
+
+WHERE aa.account_no = '181668c4265';
