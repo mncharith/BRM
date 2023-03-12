@@ -7,3 +7,15 @@ aa.lineage, aa.group_obj_id0, aa.currency, aa.locale
 FROM account_t aa
 
 WHERE aa.account_no = '181668c4265';
+
+--getBillNowBillTotalDue
+
+
+SELECT bt.total_due,bt.due, bill_no, current_total, bt.end_t, bt.currency, bt.account_obj_id0, bt.current_total
+
+FROM  bill_t bt, account_t act 
+					
+WHERE 
+    act.poid_id0 = bt.account_obj_id0 
+    and bt.name = 'PIN Bill NOW'
+    and account_no = '186d4883e81' order by end_t desc;
