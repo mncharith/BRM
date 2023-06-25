@@ -1,0 +1,46 @@
+Trial Signup input :
+
+intu_op_signup input flist
+# number of field entries allocated 20, used 14
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_CUSTOMER_SEGMENT_LIST    STR [0] "SMALL_BUSINESS"
+0 PIN_FLD_ORDER_ID        STR [0] "188f2d2ac35300129861688972724"
+0 INTU_FLD_PACKAGES     ARRAY [0] allocated 20, used 2
+1     INTU_FLD_PACKAGE_ID     STR [0] "30012986"
+1     PIN_FLD_SERVICES      ARRAY [0] allocated 20, used 2
+2         PIN_FLD_SERVICE_TYPE    STR [0] "/service/intuit/qbo"
+2         PIN_FLD_SVC_CODE        STR [0] "188f2d2ac35"
+0 PIN_FLD_CURRENCY        INT [0] 840
+0 PIN_FLD_LOCALE          STR [0] "en_US"
+0 PIN_FLD_NAME            STR [0] "Intuit Corp"
+0 INTU_FLD_NGP_ACH        INT [0] 1
+0 INTU_FLD_EXT_CUST_SEG    STR [0] "REGULAR"
+0 PIN_FLD_ACCOUNT_NO      STR [0] "188f2d2ac35"
+0 PIN_FLD_NAMEINFO      ARRAY [0] allocated 20, used 10
+1     PIN_FLD_LAST_NAME       STR [0] "XXXX"
+1     PIN_FLD_FIRST_NAME      STR [0] "XXXX"
+1     PIN_FLD_PHONES        ARRAY [0] allocated 20, used 2
+2         PIN_FLD_PHONE           STR [0] "XXXX"
+2         PIN_FLD_TYPE           ENUM [0] 1
+1     PIN_FLD_EMAIL_ADDR      STR [0] "XXXX"
+1     PIN_FLD_COUNTRY         STR [0] "XXXX"
+1     PIN_FLD_ZIP             STR [0] "XXXX"
+1     PIN_FLD_STATE           STR [0] "XXXX"
+1     PIN_FLD_CITY            STR [0] "XXXX"
+1     PIN_FLD_ADDRESS         STR [0] "XXXX"
+1     PIN_FLD_COMPANY         STR [0] "XXXX"
+0 PIN_FLD_END_T        TSTAMP [0] (1688972724) Mon Jul 10 00:05:24 2023
+0 INTU_FLD_LEGAL_ENTITY    STR [0] "100"
+0 INTU_FLD_OPCODE_NAME    STR [0] "INTU_OP_SIGNUP"
+
+* Payinfo details not sent 
+
+
+Flow:
+1) fm_intu_signup_is_trial
+2) 
+
+How to determine if its a trial signup?
+Based on the package id passed in the input.
+
+
