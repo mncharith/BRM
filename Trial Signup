@@ -1,6 +1,7 @@
-Trial Signup input :
-
+Trial Signup input flist
 intu_op_signup input flist
+
+
 # number of field entries allocated 20, used 14
 0 PIN_FLD_POID           POID [0] 0.0.0.1 /account -1 0
 0 PIN_FLD_CUSTOMER_SEGMENT_LIST    STR [0] "SMALL_BUSINESS"
@@ -33,14 +34,14 @@ intu_op_signup input flist
 0 INTU_FLD_LEGAL_ENTITY    STR [0] "100"
 0 INTU_FLD_OPCODE_NAME    STR [0] "INTU_OP_SIGNUP"
 
-* Payinfo details not sent 
+* Payinfo details not passed in the flist
 
 
 Flow:
-1) fm_intu_signup_is_trial
+1) fm_intu_signup_is_trial -> fm_intu_utils_get_package_from_cache
 2) 
 
 How to determine if its a trial signup?
-Based on the package id passed in the input.
+Based on processing the package id passed in the input.
 
 
