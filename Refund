@@ -1,0 +1,42 @@
+Opcode : INTU_OP_ITEM_REFUND
+
+File :fm_intu_interface_item_refund.c
+
+Flow : 
+
+1)fm_intu_check_policy
+
+1) Print input flist "fm_intu_op_item_refund input flist"
+2) Get account and billinfo poid
+3) Check if PIN_FLD_ITEMS passed in the flist if yes set items_passed_in=1
+4) Check if follow on credit is applicable for the account and billinfo poid
+          if not the fm_intu_create_standalone_refund and cleanup
+5) Attempt closing bill if we have passed the bill cycle --> fm_utils_close_bill
+6) Get latest billinfo and billinfo poid if error cleanup
+7) Open a transaction --> fm_utils_trans_open if error cleanup
+8) if (items_passed_in == 1) -->
+
+9) else if items_passed_in == 0 
+      9.1) select all the debit items for the billinfo -- is_credit = 0 --> intu_item_refund_select_credit_debit_items
+      9.2) 
+
+ intu_op_item_refund input flist
+# number of field entries allocated 20, used 3
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /account 9075962 0
+0 PIN_FLD_BILLINFO_OBJ   POID [0] 0.0.0.1 /billinfo 9073146 7
+0 PIN_FLD_PROGRAM_NAME    STR [0] "intu_create_refund"
+
+
+ intu_op_item_refund return flist
+# number of field entries allocated 20, used 2
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /account 9075962 0
+0 PIN_FLD_ITEMS         ARRAY [0] allocated 20, used 3
+1     PIN_FLD_ITEM_OBJ       POID [0] 0.0.0.1 /item/refund 343733723130958067 0
+1     PIN_FLD_AMOUNT       DECIMAL [0] -58
+1     PIN_FLD_POID           POID [0] 0.0.0.1 /item/payment 343663354386728564 0
+
+
+https://wiki.intuit.com/display/EBSFES/CIELO%3A+Follow+on+Credit#CIELO:FollowonCredit-ScenarioswhereoBillcanrefund/credit
+
+https://jira.intuit.com/browse/OBR-59664
+https://jira.intuit.com/browse/OBR-58703
