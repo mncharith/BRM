@@ -145,3 +145,7 @@ intu_op_event_notify return flist
 0 PIN_FLD_BILLINFO_OBJ   POID [0] 0.0.0.1 /billinfo 9183645 2
 0 PIN_FLD_NOTIFY_FLAG    ENUM [0] 65536
 0 PIN_FLD_BILL_OBJ       POID [0] 0.0.0.1 /bill 343680946572896669 0
+
+
+1) INTU_OP_SEND_CORRES_CREATE_QUEUE object is created in INTU_OP_EVENT_NOTIFY opcode flow.
+2) 
