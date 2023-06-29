@@ -1,0 +1,147 @@
+INTU_OP_EVENT_NOTIFY
+
+fm_intu_interface_event_notify.c
+
+intu_op_event_notify input flist
+# number of field entries allocated 47, used 24
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /event/billing/payment/cc 344208712154246342 0
+0 PIN_FLD_NAME            STR [0] "Billing Event Log"
+0 PIN_FLD_USERID         POID [0] 0.0.0.1 /service/pcm_client 1 127
+0 PIN_FLD_SESSION_OBJ    POID [0] 0.0.0.1 /event/session 344208712154240935 0
+0 PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 9186461 0
+0 PIN_FLD_PROGRAM_NAME    STR [0] "NGP Payment API"
+0 PIN_FLD_START_T      TSTAMP [0] (1690528098) Fri Jul 28 00:08:18 2023
+0 PIN_FLD_END_T        TSTAMP [0] (1690528098) Fri Jul 28 00:08:18 2023
+0 PIN_FLD_SYS_DESCR       STR [0] "Payment - Thank you"
+0 PIN_FLD_EVENT_MISC_DETAILS  ARRAY [0] allocated 20, used 2
+1     PIN_FLD_REASON_ID       INT [0] 0
+1     PIN_FLD_REASON_DOMAIN_ID    INT [0] 100
+0 PIN_FLD_PAYMENT      SUBSTRUCT [0] allocated 20, used 9
+1     PIN_FLD_COMMAND        ENUM [0] 4
+1     PIN_FLD_PAY_TYPE       ENUM [0] 10003
+1     PIN_FLD_MERCHANT        STR [0] "Intuit"
+1     PIN_FLD_CURRENCY        INT [0] 840
+1     PIN_FLD_AMOUNT       DECIMAL [0] 22
+1     PIN_FLD_STATUS         ENUM [0] 0
+1     PIN_FLD_TRANS_ID        STR [0] "T1-7148b4e-0"
+1     PIN_FLD_ACH             INT [0] 4
+1     PIN_FLD_ACCOUNT_NO      STR [0] "18905867db8"
+0 PIN_FLD_CC_INFO       ARRAY [0] allocated 20, used 1
+1     PIN_FLD_RESULT         ENUM [0] 0
+0 PIN_FLD_ITEM_OBJ       POID [0] 0.0.0.1 /item/payment 344208712154244294 0
+0 PIN_FLD_BAL_IMPACTS   ARRAY [0] allocated 20, used 17
+1     PIN_FLD_IMPACT_TYPE    ENUM [0] 2
+1     PIN_FLD_RESOURCE_ID     INT [0] 840
+1     PIN_FLD_RESOURCE_ID_ORIG    INT [0] 0
+1     PIN_FLD_TAX_CODE        STR [0] ""
+1     PIN_FLD_RATE_TAG        STR [0] ""
+1     PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 9186461 0
+1     PIN_FLD_ITEM_OBJ       POID [0] 0.0.0.1 /item/payment 344208712154244294 0
+1     PIN_FLD_RATE_OBJ       POID [0] 0.0.0.0  0 0
+1     PIN_FLD_DISCOUNT     DECIMAL [0] 0
+1     PIN_FLD_PERCENT      DECIMAL [0] 0
+1     PIN_FLD_QUANTITY     DECIMAL [0] 0
+1     PIN_FLD_AMOUNT_DEFERRED DECIMAL [0] 0
+1     PIN_FLD_AMOUNT       DECIMAL [0] -22.00
+1     PIN_FLD_AMOUNT_ORIG  DECIMAL [0] NULL pin_decimal_t ptr
+1     PIN_FLD_BAL_GRP_OBJ    POID [0] 0.0.0.1 /balance_group 9184157 3
+1     PIN_FLD_GL_ID           INT [0] 150090
+1     PIN_FLD_LINEAGE         STR [0] NULL str ptr
+0 INTU_FLD_PAYMENT_ADDITIONAL_DETAILS  ARRAY [0] allocated 20, used 3
+1     PIN_FLD_ATTR_NAME       STR [0] "authorizationDetails"
+1     PIN_FLD_NAME            STR [0] "authCode"
+1     PIN_FLD_VALUE           STR [0] "230729"
+0 PIN_FLD_CURRENCY        INT [0] 840
+0 PIN_FLD_INVOICE_DATA    STR [0] "0 256 9 0 \n1 834 1 0 840\n1 58 14 0 0\n1 1206 5 0 \"\"\n1 107 7 0 0.0.0.1 /item/payment 344208712154244294 0\n1 57 14 0 -22.00\n1 1205 3 0 2\n1 841 14 0 0\n1 536 5 0 \"\"\n1 840 1 0 150090\n"
+0 PIN_FLD_SUB_BAL_IMPACTS  ARRAY [0] allocated 20, used 3
+1     PIN_FLD_BAL_GRP_OBJ    POID [0] 0.0.0.1 /balance_group 9184157 4
+1     PIN_FLD_RESOURCE_ID     INT [0] 840
+1     PIN_FLD_SUB_BALANCES  ARRAY [0] allocated 20, used 8
+2         PIN_FLD_VALID_FROM   TSTAMP [0] (1687935600) Wed Jun 28 00:00:00 2023
+2         PIN_FLD_VALID_TO     TSTAMP [0] (0) <null>
+2         PIN_FLD_VALID_FROM_DETAILS    INT [0] 0
+2         PIN_FLD_VALID_TO_DETAILS    INT [0] 0
+2         PIN_FLD_GRANTOR_OBJ    POID [0] 0.0.0.1 /purchased_product 9186397 0
+2         PIN_FLD_ROLLOVER_DATA    INT [0] 0
+2         PIN_FLD_CONTRIBUTOR_STR    STR [0] ""
+2         PIN_FLD_AMOUNT       DECIMAL [0] -22
+0 PIN_FLD_EARNED_START_T TSTAMP [0] (0) <null>
+0 PIN_FLD_EARNED_END_T TSTAMP [0] (0) <null>
+0 PIN_FLD_EARNED_TYPE     INT [0] 0
+0 PIN_FLD_EFFECTIVE_T  TSTAMP [0] (0) <null>
+0 PIN_FLD_PIGGYBACK_FLAG    INT [0] 0
+0 INTU_FLD_OPCODE_NAME    STR [0] "INTU_OP_EVENT_NOTIFY"
+
+
+intu_op_event_notify return flist
+# number of field entries allocated 27, used 27
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /event/billing/payment/cc 344208712154246342 0
+0 PIN_FLD_NAME            STR [0] "Billing Event Log"
+0 PIN_FLD_USERID         POID [0] 0.0.0.1 /service/pcm_client 1 127
+0 PIN_FLD_SESSION_OBJ    POID [0] 0.0.0.1 /event/session 344208712154240935 0
+0 PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 9186461 0
+0 PIN_FLD_PROGRAM_NAME    STR [0] "NGP Payment API"
+0 PIN_FLD_START_T      TSTAMP [0] (1690528098) Fri Jul 28 00:08:18 2023
+0 PIN_FLD_END_T        TSTAMP [0] (1690528098) Fri Jul 28 00:08:18 2023
+0 PIN_FLD_SYS_DESCR       STR [0] "Payment - Thank you"
+0 PIN_FLD_EVENT_MISC_DETAILS  ARRAY [0] allocated 20, used 2
+1     PIN_FLD_REASON_ID       INT [0] 0
+1     PIN_FLD_REASON_DOMAIN_ID    INT [0] 100
+0 PIN_FLD_PAYMENT      SUBSTRUCT [0] allocated 20, used 9
+1     PIN_FLD_COMMAND        ENUM [0] 4
+1     PIN_FLD_PAY_TYPE       ENUM [0] 10003
+1     PIN_FLD_MERCHANT        STR [0] "Intuit"
+1     PIN_FLD_CURRENCY        INT [0] 840
+1     PIN_FLD_AMOUNT       DECIMAL [0] 22
+1     PIN_FLD_STATUS         ENUM [0] 0
+1     PIN_FLD_TRANS_ID        STR [0] "T1-7148b4e-0"
+1     PIN_FLD_ACH             INT [0] 4
+1     PIN_FLD_ACCOUNT_NO      STR [0] "18905867db8"
+0 PIN_FLD_CC_INFO       ARRAY [0] allocated 20, used 1
+1     PIN_FLD_RESULT         ENUM [0] 0
+0 PIN_FLD_ITEM_OBJ       POID [0] 0.0.0.1 /item/payment 344208712154244294 0
+0 PIN_FLD_BAL_IMPACTS   ARRAY [0] allocated 20, used 17
+1     PIN_FLD_IMPACT_TYPE    ENUM [0] 2
+1     PIN_FLD_RESOURCE_ID     INT [0] 840
+1     PIN_FLD_RESOURCE_ID_ORIG    INT [0] 0
+1     PIN_FLD_TAX_CODE        STR [0] ""
+1     PIN_FLD_RATE_TAG        STR [0] ""
+1     PIN_FLD_ACCOUNT_OBJ    POID [0] 0.0.0.1 /account 9186461 0
+1     PIN_FLD_ITEM_OBJ       POID [0] 0.0.0.1 /item/payment 344208712154244294 0
+1     PIN_FLD_RATE_OBJ       POID [0] 0.0.0.0  0 0
+1     PIN_FLD_DISCOUNT     DECIMAL [0] 0
+1     PIN_FLD_PERCENT      DECIMAL [0] 0
+1     PIN_FLD_QUANTITY     DECIMAL [0] 0
+1     PIN_FLD_AMOUNT_DEFERRED DECIMAL [0] 0
+1     PIN_FLD_AMOUNT       DECIMAL [0] -22.00
+1     PIN_FLD_AMOUNT_ORIG  DECIMAL [0] NULL pin_decimal_t ptr
+1     PIN_FLD_BAL_GRP_OBJ    POID [0] 0.0.0.1 /balance_group 9184157 3
+1     PIN_FLD_GL_ID           INT [0] 150090
+1     PIN_FLD_LINEAGE         STR [0] NULL str ptr
+0 INTU_FLD_PAYMENT_ADDITIONAL_DETAILS  ARRAY [0] allocated 20, used 3
+1     PIN_FLD_ATTR_NAME       STR [0] "authorizationDetails"
+1     PIN_FLD_NAME            STR [0] "authCode"
+1     PIN_FLD_VALUE           STR [0] "230729"
+0 PIN_FLD_CURRENCY        INT [0] 840
+0 PIN_FLD_INVOICE_DATA    STR [0] "0 256 9 0 \n1 834 1 0 840\n1 58 14 0 0\n1 1206 5 0 \"\"\n1 107 7 0 0.0.0.1 /item/payment 344208712154244294 0\n1 57 14 0 -22.00\n1 1205 3 0 2\n1 841 14 0 0\n1 536 5 0 \"\"\n1 840 1 0 150090\n"
+0 PIN_FLD_SUB_BAL_IMPACTS  ARRAY [0] allocated 20, used 3
+1     PIN_FLD_BAL_GRP_OBJ    POID [0] 0.0.0.1 /balance_group 9184157 4
+1     PIN_FLD_RESOURCE_ID     INT [0] 840
+1     PIN_FLD_SUB_BALANCES  ARRAY [0] allocated 20, used 8
+2         PIN_FLD_VALID_FROM   TSTAMP [0] (1687935600) Wed Jun 28 00:00:00 2023
+2         PIN_FLD_VALID_TO     TSTAMP [0] (0) <null>
+2         PIN_FLD_VALID_FROM_DETAILS    INT [0] 0
+2         PIN_FLD_VALID_TO_DETAILS    INT [0] 0
+2         PIN_FLD_GRANTOR_OBJ    POID [0] 0.0.0.1 /purchased_product 9186397 0
+2         PIN_FLD_ROLLOVER_DATA    INT [0] 0
+2         PIN_FLD_CONTRIBUTOR_STR    STR [0] ""
+2         PIN_FLD_AMOUNT       DECIMAL [0] -22
+0 PIN_FLD_EARNED_START_T TSTAMP [0] (0) <null>
+0 PIN_FLD_EARNED_END_T TSTAMP [0] (0) <null>
+0 PIN_FLD_EARNED_TYPE     INT [0] 0
+0 PIN_FLD_EFFECTIVE_T  TSTAMP [0] (0) <null>
+0 PIN_FLD_PIGGYBACK_FLAG    INT [0] 0
+0 INTU_FLD_OPCODE_NAME    STR [0] "INTU_OP_EVENT_NOTIFY"
+0 PIN_FLD_BILLINFO_OBJ   POID [0] 0.0.0.1 /billinfo 9183645 2
+0 PIN_FLD_NOTIFY_FLAG    ENUM [0] 65536
+0 PIN_FLD_BILL_OBJ       POID [0] 0.0.0.1 /bill 343680946572896669 0
